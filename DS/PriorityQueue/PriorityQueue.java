@@ -1,1 +1,5 @@
-
+-> Priority Queue is similar to the normal queue, the only difference is the pattern in which nodes are removed.
+-> Insertion takes place from the REAR of the queue.
+-> Deletion takes place from the front of the queue.
+-> Each node in the queue is assigned a priority, and there is a comparator function which is passed as an arguement at the removal function.
+-> The node with highest priority is preferred to remove first.
