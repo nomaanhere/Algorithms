@@ -3,20 +3,20 @@
 //2) A LinkedList
 //Implementation of a queue using a LinkedList
 
-There are two pointers in queue viz. Front and Rear.
-Nodes are inserted from the Rear of the List.
-Nodes are deleted from the front of the List.
+//There are two pointers in queue viz. Front and Rear.
+//Nodes are inserted from the Rear of the List.
+//Nodes are deleted from the front of the List.
 
-*Important points:
--> If the queue is empty front node and the rear node should point to null.
--> If there is only one node in the list, and we are about to delete that node then front would be null, but rear would still point to that node.
-    Its our duty to make rear pointing to null.
--> Before deleting a node from the list, check whether the list is empty i.e. front==null or not.
--> Before inserting check whether front==null or not. If yes then head.next=Node and same goes to the rear.
+//*Important points:
+//-> If the queue is empty front node and the rear node should point to null.
+//-> If there is only one node in the list, and we are about to delete that node then front would be null, but rear would still point to that node.
+//    Its our duty to make rear pointing to null.
+//-> Before deleting a node from the list, check whether the list is empty i.e. front==null or not.
+//-> Before inserting check whether front==null or not. If yes then head.next=Node and same goes to the rear.
 
-There are two operations defined in the queue mainly
-1) Enqueue -> Insertion of the node to the FRONT of the queue.
-2) Dequeue -> Deletion of the node from the REAR of the queue.
+//There are two operations defined in the queue mainly
+//1) Enqueue -> Insertion of the node to the REAR of the queue.
+//2) Dequeue -> Deletion of the node from the FRONT of the queue.
 
 public class queue{
   //defining the node to be used in the Singly LinkedList
