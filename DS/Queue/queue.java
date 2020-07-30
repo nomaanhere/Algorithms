@@ -14,7 +14,9 @@ Nodes are deleted from the front of the List.
 -> Before deleting a node from the list, check whether the list is empty i.e. front==null or not.
 -> Before inserting check whether front==null or not. If yes then head.next=Node and same goes to the rear.
 
-
+There are two operations defined in the queue mainly
+1) Enqueue -> Insertion of the node to the FRONT of the queue.
+2) Dequeue -> Deletion of the node from the REAR of the queue.
 
 public class queue{
   //defining the node to be used in the Singly LinkedList
@@ -34,7 +36,7 @@ public class queue{
     return front == null;
   }
   
-  public static coid add(int data){
+  public static void enqueue(int data){
     Node toAdd = new Node(data);
     if(front == null){
       front = toAdd;
@@ -47,7 +49,17 @@ public class queue{
       rear = toAdd;
     }
   }
-  
-  
-
+   
+  public Node dequeue(){
+    if(front == null && rear == null){
+        return null; //node can't be deleted
+    }
+    if(front.next == null){
+        rear=null;//if there is only one node left in the list that is to be deleted     
+    }
+    else {
+        Node temp = front;
+        front = front.next;
+        return temp.data;
+  }
 }
