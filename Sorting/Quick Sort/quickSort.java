@@ -1,3 +1,8 @@
+//Time Complexity Analysis:
+//Best Case Time Complexity: O(nlogn)
+//Avg Case Time Complexity: O(nlogn)
+//Worst Case Time Complexity: O(n2)
+
 public static void main(String args[]){
   int []arr = {5,4,3,2,1};
   int n = arr.length;
